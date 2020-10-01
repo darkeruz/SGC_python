@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>ventanaLogin</class>
+ <widget class="QWidget" name="ventanaLogin">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -23,7 +23,35 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Iniciar sesión o registrarse</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-image: url(:/images/images/backgroundDarkRed.jpg);
+
+}
+
+QFrame{
+background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius: 15px;
+
+}
+
+QLabel{
+	background: transparent;
+	color: rgb(99, 245, 77);
+	font-size: 20px;
+	font: Ubuntu bold;
+}
+
+QLineEdit{
+color: white
+}
+
+QPushButton{
+color: white;
+background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, stop:0 rgba(164, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
   </property>
   <widget class="QLabel" name="label_usuario">
    <property name="geometry">
@@ -41,10 +69,10 @@
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>400</width>
-     <height>84</height>
+     <x>10</x>
+     <y>10</y>
+     <width>371</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -53,6 +81,25 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QLabel" name="label_error404">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-10</y>
+      <width>351</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/images/images/error_404-2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="QComboBox" name="comboBox">
    <property name="enabled">
@@ -77,17 +124,27 @@
     </property>
    </item>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label_cuenta">
    <property name="geometry">
     <rect>
      <x>60</x>
      <y>110</y>
-     <width>56</width>
+     <width>71</width>
      <height>17</height>
     </rect>
    </property>
    <property name="text">
     <string>Cuenta</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_user">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>210</y>
+     <width>271</width>
+     <height>26</height>
+    </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_password">
@@ -99,15 +156,8 @@
      <height>26</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_usuario">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>210</y>
-     <width>271</width>
-     <height>26</height>
-    </rect>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label_password">
@@ -115,7 +165,7 @@
     <rect>
      <x>60</x>
      <y>250</y>
-     <width>82</width>
+     <width>131</width>
      <height>17</height>
     </rect>
    </property>
@@ -123,7 +173,58 @@
     <string>Contraseña</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_login">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>330</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ingresar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_register">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>330</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Registrarse</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_salir">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>330</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>label_usuario</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>label_cuenta</zorder>
+  <zorder>lineEdit_user</zorder>
+  <zorder>lineEdit_password</zorder>
+  <zorder>label_password</zorder>
+  <zorder>pushButton_login</zorder>
+  <zorder>pushButton_register</zorder>
+  <zorder>pushButton_salir</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
  <connections/>
 </ui>
