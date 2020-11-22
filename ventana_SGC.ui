@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ventana_SGC</class>
+ <widget class="QWidget" name="ventana_SGC">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>480</width>
+    <height>497</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>480</width>
+    <height>497</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de Gestión Contable</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="source.qrc">
+    <normaloff>:/images/images/error_404-2.png</normaloff>:/images/images/error_404-2.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-image: url(:/images/images/backgroundDarkRed.jpg);
+}
+
+QFrame#frame_top{
+background-image: url(:/images/images/darkBlueBackground.png);
+
+	border-radius: 15px;
+}
+
+QFrame#frame_bottom{
+	width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    background: rgba(3,3,3,0.60);
+    display: none;
+}
+
+QLabel#label_404{
+	background: transparent;
+}
+
+QLabel#label_titulo{
+	color: rgb(130, 251, 207);
+	background: transparent;
+	font-size: 28px;
+	font-family: Sans;
+}
+
+QPushButton#pushButton_salir{
+color: white;
+background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, stop:0 rgba(164, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))
+}
+
+QPushButton#pushButton_registrarMovimientos{
+	background: qlineargradient(spread:pad, x1:0.93, y1:0.147727, x2:1, y2:0, stop:0 rgba(0, 19, 144, 243), stop:1 rgba(255, 255, 255, 255));
+	color: white;
+	font-size: 20px;
+}
+
+QPushButton#pushButton_realizarConsultas{
+	background: qlineargradient(spread:pad, x1:0.93, y1:0.147727, x2:1, y2:0, stop:0 rgba(0, 19, 144, 243), stop:1 rgba(255, 255, 255, 255));
+	color: white;
+	font-size: 20px;
+}
+
+QLabel#label_realizarConsultas{
+	background: transparent;
+}
+
+QLabel#label_registrarMovimientos{
+	background: transparent;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame_top">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>461</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_404">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>-10</y>
+      <width>211</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/images/images/error404.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_titulo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sistema de Gestión 
+Contable</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_bottom">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>461</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_salir">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>260</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_registrarMovimientos">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>130</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Registrar 
+movimientos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_realizarConsultas">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>20</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Realizar 
+consultas</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_realizarConsultas">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/images/images/consultar.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_registrarMovimientos">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>120</y>
+      <width>141</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/images/images/RegistrarMovimientos.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

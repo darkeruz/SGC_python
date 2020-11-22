@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>Iniciar sesión o registrarse</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="source.qrc">
+    <normaloff>:/images/images/error_404-2.png</normaloff>:/images/images/error_404-2.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
 	background-image: url(:/images/images/backgroundDarkRed.jpg);
@@ -32,9 +36,10 @@
 }
 
 QFrame{
-background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
-border-radius: 15px;
+	
+	background-image: url(:/images/images/darkBlueBackground.png);
 
+	border-radius: 15px;
 }
 
 QLabel{
@@ -51,6 +56,13 @@ color: white
 QPushButton{
 color: white;
 background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, stop:0 rgba(164, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))
+}
+
+QLabel#label_titulo{
+	color: rgb(130, 251, 207);
+	background: transparent;
+	font-size: 24px;
+	font-family: Sans;
 }</string>
   </property>
   <widget class="QLabel" name="label_usuario">
@@ -84,9 +96,9 @@ background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, st
    <widget class="QLabel" name="label_error404">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>230</x>
       <y>-10</y>
-      <width>351</width>
+      <width>141</width>
       <height>111</height>
      </rect>
     </property>
@@ -94,10 +106,33 @@ background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, st
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/error_404-2.png</pixmap>
+     <pixmap resource="source.qrc">:/images/images/error404.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_titulo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-10</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sistema de Gestión 
+Contable</string>
     </property>
    </widget>
   </widget>
@@ -189,20 +224,20 @@ background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, st
   <widget class="QPushButton" name="pushButton_register">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>150</x>
      <y>330</y>
-     <width>89</width>
+     <width>101</width>
      <height>25</height>
     </rect>
    </property>
    <property name="text">
-    <string>Registrarse</string>
+    <string>Crear cuenta</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_salir">
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>270</x>
      <y>330</y>
      <width>89</width>
      <height>25</height>
