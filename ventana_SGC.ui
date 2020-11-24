@@ -31,7 +31,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-image: url(:/images/images/backgroundDarkRed.jpg);
+		background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }
 
 QFrame#frame_top{
@@ -44,7 +44,7 @@ QFrame#frame_bottom{
 	width: 260px;
     height: 260px;
     border-radius: 15px;
-    background: rgba(3,3,3,0.60);
+    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
     display: none;
 }
 

@@ -31,8 +31,12 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-image: url(:/images/images/backgroundDarkRed.jpg);
+	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));
 
+}
+
+QFrame#frame_bot{
+	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
 }
 
 QFrame{
@@ -68,8 +72,8 @@ QLabel#label_titulo{
   <widget class="QLabel" name="label_usuario">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>180</y>
+     <x>20</x>
+     <y>190</y>
      <width>331</width>
      <height>28</height>
     </rect>
@@ -78,7 +82,7 @@ QLabel#label_titulo{
     <string>Usuario</string>
    </property>
   </widget>
-  <widget class="QFrame" name="frame">
+  <widget class="QFrame" name="frame_top">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -142,8 +146,8 @@ Contable</string>
    </property>
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>130</y>
+     <x>20</x>
+     <y>140</y>
      <width>280</width>
      <height>26</height>
     </rect>
@@ -162,8 +166,8 @@ Contable</string>
   <widget class="QLabel" name="label_cuenta">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>110</y>
+     <x>20</x>
+     <y>120</y>
      <width>71</width>
      <height>17</height>
     </rect>
@@ -175,8 +179,8 @@ Contable</string>
   <widget class="QLineEdit" name="lineEdit_user">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>210</y>
+     <x>20</x>
+     <y>220</y>
      <width>271</width>
      <height>26</height>
     </rect>
@@ -185,8 +189,8 @@ Contable</string>
   <widget class="QLineEdit" name="lineEdit_password">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>270</y>
+     <x>20</x>
+     <y>280</y>
      <width>271</width>
      <height>26</height>
     </rect>
@@ -198,8 +202,8 @@ Contable</string>
   <widget class="QLabel" name="label_password">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>250</y>
+     <x>20</x>
+     <y>260</y>
      <width>131</width>
      <height>17</height>
     </rect>
@@ -247,7 +251,24 @@ Contable</string>
     <string>Salir</string>
    </property>
   </widget>
-  <zorder>frame</zorder>
+  <widget class="QFrame" name="frame_bot">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>371</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame_bot</zorder>
+  <zorder>frame_top</zorder>
   <zorder>label_usuario</zorder>
   <zorder>comboBox</zorder>
   <zorder>label_cuenta</zorder>

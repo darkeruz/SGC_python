@@ -31,7 +31,9 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-image: url(:/images/images/backgroundDarkRed.jpg);
+	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));
+
+/*rgb(46, 52, 54)*/
 
 }
 
@@ -39,7 +41,7 @@ QFrame#frame_bottom{
 	width: 260px;
     height: 260px;
     border-radius: 15px;
-    background: rgba(3,3,3,0.60);
+    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
     display: none;
 }
 
@@ -118,71 +120,123 @@ background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, st
      <string>Salir</string>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QLabel" name="label_correo">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>421</width>
-      <height>161</height>
+      <x>11</x>
+      <y>145</y>
+      <width>68</width>
+      <height>24</height>
      </rect>
     </property>
-    <layout class="QFormLayout" name="formLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_nombre">
-       <property name="text">
-        <string>Apellido</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLineEdit" name="lineEdit_apellido"/>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label_apellido">
-       <property name="text">
-        <string>Nombre</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="lineEdit_nombre"/>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_nombre_usuario">
-       <property name="text">
-        <string>Nombre de usuario</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit_nombre_usuario"/>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="label_password">
-       <property name="text">
-        <string>Contraseña</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_password">
-       <property name="echoMode">
-        <enum>QLineEdit::Password</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_correo">
-       <property name="text">
-        <string>Correo</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLineEdit" name="lineEdit_correo"/>
-     </item>
-    </layout>
+    <property name="text">
+     <string>Correo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_apellido">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>52</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_apellido">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>21</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_nombre_usuario">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>83</y>
+      <width>192</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre de usuario</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_password">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>114</y>
+      <width>115</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Contraseña</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nombre">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>52</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nombre_usuario">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>83</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_nombre">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>21</y>
+      <width>81</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apellido</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_password">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>114</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_correo">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>145</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QFrame" name="frame_top">
