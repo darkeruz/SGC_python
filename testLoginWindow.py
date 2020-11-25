@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import Qt
+from PyQt5.Qt import Qt
 from PyQt5 import QtWidgets as qtw
 from PyQt5 import QtCore as qtc
 from PyQt5 import QtGui as qtg
@@ -18,7 +18,6 @@ class ventanaSGC(qtw.QWidget, Ui_ventana_SGC):
 
     def boton_salir_SGC(self):
         self.close()
-
 
 
 class MainWindow(qtw.QWidget):
@@ -134,19 +133,6 @@ class MainWindow(qtw.QWidget):
         self.uiVentanaCrearCuenta.lineEdit_correo.setText("")
 
         self.uiVentanaCrearCuenta.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
