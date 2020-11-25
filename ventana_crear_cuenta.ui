@@ -212,7 +212,7 @@ background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, st
      </rect>
     </property>
     <property name="text">
-     <string>Apellido</string>
+     <string>Apellido </string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_password">

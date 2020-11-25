@@ -92,11 +92,11 @@ class Ui_ventanaLogin(object):
         self.lineEdit_user.setGeometry(QtCore.QRect(20, 220, 271, 26))
         self.lineEdit_user.setObjectName("lineEdit_user")
         self.lineEdit_password = QtWidgets.QLineEdit(ventanaLogin)
-        self.lineEdit_password.setGeometry(QtCore.QRect(20, 280, 271, 26))
+        self.lineEdit_password.setGeometry(QtCore.QRect(20, 290, 271, 26))
         self.lineEdit_password.setEchoMode(QtWidgets.QLineEdit.Password)
         self.lineEdit_password.setObjectName("lineEdit_password")
         self.label_password = QtWidgets.QLabel(ventanaLogin)
-        self.label_password.setGeometry(QtCore.QRect(20, 260, 131, 17))
+        self.label_password.setGeometry(QtCore.QRect(20, 265, 131, 17))
         self.label_password.setObjectName("label_password")
         self.pushButton_login = QtWidgets.QPushButton(ventanaLogin)
         self.pushButton_login.setGeometry(QtCore.QRect(40, 330, 89, 25))
@@ -141,7 +141,7 @@ class Ui_ventanaLogin(object):
         self.pushButton_register.setText(_translate("ventanaLogin", "Crear cuenta"))
         self.pushButton_salir.setText(_translate("ventanaLogin", "Salir"))
 
-import source
+import source_rc
 
 if __name__ == "__main__":
     import sys

@@ -1,4 +1,5 @@
 import sys
+from PyQt5 import Qt
 from PyQt5 import QtWidgets as qtw
 from PyQt5 import QtCore as qtc
 from PyQt5 import QtGui as qtg
@@ -14,6 +15,9 @@ class ventanaCrearCuenta(qtw.QWidget, Ui_ventana_crear_cuenta):
 class ventanaSGC(qtw.QWidget, Ui_ventana_SGC):
     def __init__(self):
         super().__init__()
+
+    def boton_salir_SGC(self):
+        self.close()
 
 
 
@@ -31,7 +35,10 @@ class MainWindow(qtw.QWidget):
 
         #Si clickeamos en el boton de Salir, llamamos a la funcion boton_salir()
         self.uiLogin.pushButton_salir.clicked.connect(self.boton_salir)
-
+        #Si usamos el metodo "setAutoDefault(True)" en un boton, este emitira la señal de "clicked" cuando presionemos enter
+        self.uiLogin.pushButton_salir.setAutoDefault(True)
+        self.uiLogin.pushButton_register.setAutoDefault(True)
+        self.uiLogin.pushButton_login.setAutoDefault(True)
         #Si clickeamos el boton Login ingresamos a la funcion login_check()
         self.uiLogin.pushButton_login.clicked.connect(self.login_check)
 
@@ -57,6 +64,8 @@ class MainWindow(qtw.QWidget):
                 self.uiSGC = ventanaSGC()
                 self.uiSGC.setupUi(self.uiSGC)
                 self.uiSGC.setGeometry(qtc.QRect(800,250,0,0))
+                self.uiSGC.pushButton_salir.setAutoDefault(True)
+                self.uiSGC.pushButton_salir.clicked.connect(self.uiSGC.boton_salir_SGC)
                 self.uiSGC.show()
                 self.close()
 
@@ -74,6 +83,8 @@ class MainWindow(qtw.QWidget):
         self.uiVentanaCrearCuenta.pushButton_salir.clicked.connect(self.boton_salir_ventana_crear_cuenta)
         self.uiVentanaCrearCuenta.show()
         self.uiVentanaCrearCuenta.pushButton_register.clicked.connect(self.boton_crear_cuenta)
+        self.uiVentanaCrearCuenta.pushButton_register.setAutoDefault(True)
+        self.uiVentanaCrearCuenta.pushButton_salir.setAutoDefault(True)
 
     def boton_salir_ventana_crear_cuenta(self):
         self.uiVentanaCrearCuenta.close()
@@ -123,6 +134,11 @@ class MainWindow(qtw.QWidget):
         self.uiVentanaCrearCuenta.lineEdit_correo.setText("")
 
         self.uiVentanaCrearCuenta.close()
+
+
+
+
+
 
 
 

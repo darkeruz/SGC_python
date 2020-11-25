@@ -125,7 +125,7 @@ class Ui_ventana_SGC(object):
         self.pushButton_realizarConsultas.setText(_translate("ventana_SGC", "Realizar \n"
 "consultas"))
 
-import source
+import source_rc
 
 if __name__ == "__main__":
     import sys

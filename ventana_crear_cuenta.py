@@ -141,11 +141,11 @@ class Ui_ventana_crear_cuenta(object):
         self.label_apellido.setText(_translate("ventana_crear_cuenta", "Nombre"))
         self.label_nombre_usuario.setText(_translate("ventana_crear_cuenta", "Nombre de usuario"))
         self.label_password.setText(_translate("ventana_crear_cuenta", "Contraseña"))
-        self.label_nombre.setText(_translate("ventana_crear_cuenta", "Apellido"))
+        self.label_nombre.setText(_translate("ventana_crear_cuenta", "Apellido "))
         self.label_titulo.setText(_translate("ventana_crear_cuenta", "Sistema de Gestión \n"
 "Contable"))
 
-import source
+import source_rc
 
 if __name__ == "__main__":
     import sys

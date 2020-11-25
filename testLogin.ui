@@ -190,7 +190,7 @@ Contable</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>280</y>
+     <y>290</y>
      <width>271</width>
      <height>26</height>
     </rect>
@@ -203,7 +203,7 @@ Contable</string>
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>260</y>
+     <y>265</y>
      <width>131</width>
      <height>17</height>
     </rect>
