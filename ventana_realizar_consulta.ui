@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ventana_realizar_consulta</class>
+ <widget class="QWidget" name="ventana_realizar_consulta">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Realizar consultas</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));
+}
+
+QFrame#frame_top{
+	
+	background-image: url(:/images/images/darkBlueBackground.png);
+
+	border-radius: 15px;
+}
+
+QLabel#label_titulo{
+	color: rgb(130, 251, 207);
+	background: transparent;
+	font-size: 28px;
+	font-family: Sans;
+}
+
+QLabel#label_error404{
+	background: transparent;
+}
+
+QFrame#frame_bottom{
+	width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
+    display: none;
+}
+
+
+
+</string>
+  </property>
+  <widget class="QFrame" name="frame_top">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>461</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_titulo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>291</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Sistema de Gestión 
+Contable</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_error404">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/images/images/error404.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_bottom">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>441</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
