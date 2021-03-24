@@ -74,6 +74,13 @@ class Ui_ventana_SGC(object):
 "\n"
 "QLabel#label_registrarMovimientos{\n"
 "    background: transparent;\n"
+"}\n"
+"\n"
+"QLabel{\n"
+"    background: transparent;\n"
+"    color: rgb(99, 245, 77);\n"
+"    font-size: 20px;\n"
+"    font: Ubuntu bold;\n"
 "}")
         self.frame_top = QtWidgets.QFrame(ventana_SGC)
         self.frame_top.setGeometry(QtCore.QRect(10, 20, 461, 111))
@@ -81,9 +88,9 @@ class Ui_ventana_SGC(object):
         self.frame_top.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top.setObjectName("frame_top")
         self.label_404 = QtWidgets.QLabel(self.frame_top)
-        self.label_404.setGeometry(QtCore.QRect(260, -10, 211, 141))
+        self.label_404.setGeometry(QtCore.QRect(300, -10, 171, 131))
         self.label_404.setText("")
-        self.label_404.setPixmap(QtGui.QPixmap(":/images/images/error404.png"))
+        self.label_404.setPixmap(QtGui.QPixmap(":/images/images/error_404-2.png"))
         self.label_404.setScaledContents(True)
         self.label_404.setObjectName("label_404")
         self.label_titulo = QtWidgets.QLabel(self.frame_top)
@@ -98,23 +105,28 @@ class Ui_ventana_SGC(object):
         self.pushButton_salir.setGeometry(QtCore.QRect(360, 260, 89, 25))
         self.pushButton_salir.setObjectName("pushButton_salir")
         self.pushButton_registrarMovimientos = QtWidgets.QPushButton(self.frame_bottom)
-        self.pushButton_registrarMovimientos.setGeometry(QtCore.QRect(11, 130, 151, 81))
+        self.pushButton_registrarMovimientos.setGeometry(QtCore.QRect(11, 140, 151, 81))
         self.pushButton_registrarMovimientos.setObjectName("pushButton_registrarMovimientos")
         self.pushButton_realizarConsultas = QtWidgets.QPushButton(self.frame_bottom)
         self.pushButton_realizarConsultas.setGeometry(QtCore.QRect(11, 20, 151, 81))
         self.pushButton_realizarConsultas.setObjectName("pushButton_realizarConsultas")
         self.label_realizarConsultas = QtWidgets.QLabel(self.frame_bottom)
-        self.label_realizarConsultas.setGeometry(QtCore.QRect(300, 20, 101, 81))
+        self.label_realizarConsultas.setGeometry(QtCore.QRect(330, 0, 131, 131))
         self.label_realizarConsultas.setText("")
-        self.label_realizarConsultas.setPixmap(QtGui.QPixmap(":/images/images/consultar.png"))
+        self.label_realizarConsultas.setPixmap(QtGui.QPixmap(":/images/images/searchIcon.png"))
         self.label_realizarConsultas.setScaledContents(True)
         self.label_realizarConsultas.setObjectName("label_realizarConsultas")
         self.label_registrarMovimientos = QtWidgets.QLabel(self.frame_bottom)
-        self.label_registrarMovimientos.setGeometry(QtCore.QRect(280, 120, 141, 101))
+        self.label_registrarMovimientos.setGeometry(QtCore.QRect(310, 140, 171, 111))
         self.label_registrarMovimientos.setText("")
-        self.label_registrarMovimientos.setPixmap(QtGui.QPixmap(":/images/images/RegistrarMovimientos.png"))
+        self.label_registrarMovimientos.setPixmap(QtGui.QPixmap(":/images/images/registrarMovimiento.png"))
         self.label_registrarMovimientos.setScaledContents(True)
         self.label_registrarMovimientos.setObjectName("label_registrarMovimientos")
+        self.pushButton_salir.raise_()
+        self.pushButton_registrarMovimientos.raise_()
+        self.pushButton_realizarConsultas.raise_()
+        self.label_registrarMovimientos.raise_()
+        self.label_realizarConsultas.raise_()
 
         self.retranslateUi(ventana_SGC)
         QtCore.QMetaObject.connectSlotsByName(ventana_SGC)

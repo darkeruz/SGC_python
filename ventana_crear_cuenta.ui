@@ -282,17 +282,17 @@ Contable</string>
    <widget class="QLabel" name="label_error404">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>290</x>
       <y>0</y>
-      <width>211</width>
-      <height>121</height>
+      <width>171</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/error404.png</pixmap>
+     <pixmap resource="source.qrc">:/images/images/error_404-2.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

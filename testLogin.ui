@@ -72,7 +72,9 @@ QLabel#label_titulo{
 	background: transparent;
 	font-size: 24px;
 	font-family: Sans;
-}</string>
+}
+
+</string>
   </property>
   <widget class="QLabel" name="label_usuario">
    <property name="geometry">
@@ -105,17 +107,17 @@ QLabel#label_titulo{
    <widget class="QLabel" name="label_error404">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>-10</y>
-      <width>141</width>
-      <height>111</height>
+      <x>260</x>
+      <y>0</y>
+      <width>111</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/error404.png</pixmap>
+     <pixmap resource="source.qrc">:/images/images/error_404-2.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

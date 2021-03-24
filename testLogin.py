@@ -62,7 +62,9 @@ class Ui_ventanaLogin(object):
 "    background: transparent;\n"
 "    font-size: 24px;\n"
 "    font-family: Sans;\n"
-"}")
+"}\n"
+"\n"
+"")
         self.label_usuario = QtWidgets.QLabel(ventanaLogin)
         self.label_usuario.setGeometry(QtCore.QRect(20, 190, 331, 28))
         self.label_usuario.setObjectName("label_usuario")
@@ -72,9 +74,9 @@ class Ui_ventanaLogin(object):
         self.frame_top.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top.setObjectName("frame_top")
         self.label_error404 = QtWidgets.QLabel(self.frame_top)
-        self.label_error404.setGeometry(QtCore.QRect(230, -10, 141, 111))
+        self.label_error404.setGeometry(QtCore.QRect(260, 0, 111, 91))
         self.label_error404.setText("")
-        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/error404.png"))
+        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/error_404-2.png"))
         self.label_error404.setScaledContents(True)
         self.label_error404.setObjectName("label_error404")
         self.label_titulo = QtWidgets.QLabel(self.frame_top)

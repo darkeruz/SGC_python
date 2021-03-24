@@ -1,18 +1,17 @@
 <RCC>
   <qresource prefix="images">
+    <file>images/iconobuscar.png</file>
+    <file>images/Icons8_flat_search.svg.png</file>
+    <file>images/registrarMovimiento.png</file>
     <file>images/backgroundDarkBlue.jpg</file>
-    <file>images/consultar.png</file>
-    <file>images/RegistrarMovimientos.png</file>
     <file>images/backgroundDarkRed.jpg</file>
     <file>images/backgroundGray.jpg</file>
     <file>images/backgroundLightBlue.jpg</file>
+    <file>images/searchIcon.png</file>
     <file>images/crearUsuario.png</file>
-    <file>images/darkBlueBackground.png</file>
-    <file>images/error404.jpeg</file>
     <file>images/error404.png</file>
     <file>images/error_404-2.png</file>
     <file>images/exit-icon.png</file>
-    <file>images/iconoSoftware.png</file>
     <file>images/loginIcon.png</file>
   </qresource>
 </RCC>

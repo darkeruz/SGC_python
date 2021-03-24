@@ -84,6 +84,13 @@ QLabel#label_realizarConsultas{
 
 QLabel#label_registrarMovimientos{
 	background: transparent;
+}
+
+QLabel{
+	background: transparent;
+	color: rgb(99, 245, 77);
+	font-size: 20px;
+	font: Ubuntu bold;
 }</string>
   </property>
   <widget class="QFrame" name="frame_top">
@@ -104,17 +111,17 @@ QLabel#label_registrarMovimientos{
    <widget class="QLabel" name="label_404">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>300</x>
       <y>-10</y>
-      <width>211</width>
-      <height>141</height>
+      <width>171</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/error404.png</pixmap>
+     <pixmap resource="source.qrc">:/images/images/error_404-2.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -167,7 +174,7 @@ Contable</string>
     <property name="geometry">
      <rect>
       <x>11</x>
-      <y>130</y>
+      <y>140</y>
       <width>151</width>
       <height>81</height>
      </rect>
@@ -194,17 +201,17 @@ consultas</string>
    <widget class="QLabel" name="label_realizarConsultas">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>20</y>
-      <width>101</width>
-      <height>81</height>
+      <x>330</x>
+      <y>0</y>
+      <width>131</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/images/images/consultar.png</pixmap>
+     <pixmap resource="source.qrc">:/images/images/searchIcon.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -213,22 +220,27 @@ consultas</string>
    <widget class="QLabel" name="label_registrarMovimientos">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>120</y>
-      <width>141</width>
-      <height>101</height>
+      <x>310</x>
+      <y>140</y>
+      <width>171</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>:/images/images/RegistrarMovimientos.png</pixmap>
+     <pixmap resource="source.qrc">:/images/images/registrarMovimiento.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
+   <zorder>pushButton_salir</zorder>
+   <zorder>pushButton_registrarMovimientos</zorder>
+   <zorder>pushButton_realizarConsultas</zorder>
+   <zorder>label_registrarMovimientos</zorder>
+   <zorder>label_realizarConsultas</zorder>
   </widget>
  </widget>
  <resources>

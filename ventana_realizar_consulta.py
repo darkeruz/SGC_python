@@ -44,9 +44,9 @@ class Ui_ventana_realizar_consulta(object):
 "}\n"
 "\n"
 "QListWidget{    \n"
-"    background-color: qlineargradient(spread:pad, x1:0.786, y1:0.267045, x2:1, y2:0, stop:0 rgba(171, 143, 143, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    background-color: black;\n"
 "    border-radius: 15px;\n"
-"    color: green;\n"
+"    color: rgb(99, 245, 77);\n"
 "}\n"
 "\n"
 "QLabel#label_descripcion{\n"
@@ -77,9 +77,9 @@ class Ui_ventana_realizar_consulta(object):
         self.label_titulo.setFont(font)
         self.label_titulo.setObjectName("label_titulo")
         self.label_error404 = QtWidgets.QLabel(self.frame_top)
-        self.label_error404.setGeometry(QtCore.QRect(250, 0, 211, 121))
+        self.label_error404.setGeometry(QtCore.QRect(300, 0, 161, 111))
         self.label_error404.setText("")
-        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/error404.png"))
+        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/error_404-2.png"))
         self.label_error404.setScaledContents(True)
         self.label_error404.setObjectName("label_error404")
         self.frame_bottom = QtWidgets.QFrame(ventana_realizar_consulta)

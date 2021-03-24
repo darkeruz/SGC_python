@@ -6,13 +6,24 @@ from PyQt5 import QtGui as qtg
 from testLogin import Ui_ventanaLogin
 from ventana_crear_cuenta import Ui_ventana_crear_cuenta
 from ventana_SGC import Ui_ventana_SGC
+from testVentana_SGCWindow import MainWindowSGC
+from ventana_realizar_consulta import Ui_ventana_realizar_consulta
 import sqlite3
+
 
 class ventanaCrearCuenta(qtw.QWidget, Ui_ventana_crear_cuenta):
     def __init__(self):
         super().__init__()
 
+class ventanaRealizarConsulta(qtw.QWidget, Ui_ventana_realizar_consulta):
+    def __init__(self):
+        super().__init__()
+
 class ventanaSGC(qtw.QWidget, Ui_ventana_SGC):
+    def __init__(self):
+        super().__init__()
+
+class ventanaTestSGC(MainWindowSGC):
     def __init__(self):
         super().__init__()
 
@@ -25,12 +36,9 @@ class MainWindow(qtw.QWidget):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # Your code will go here
-        #self.ui_crear_cuenta2 = Ui_ventana_crear_cuenta()
-        #self.ui_crear_cuenta2.setupUi(self)
         self.uiLogin = Ui_ventanaLogin()
         self.uiLogin.setupUi(self)
         self.setGeometry(qtc.QRect(800,250,0,0))
-
 
         #Si clickeamos en el boton de Salir, llamamos a la funcion boton_salir()
         self.uiLogin.pushButton_salir.clicked.connect(self.boton_salir)
@@ -60,18 +68,15 @@ class MainWindow(qtw.QWidget):
         try:
             result = cursor.execute("SELECT * FROM usuarios WHERE nombre_usuario == '{}' AND password == '{}'".format(username, password)).fetchall()
             if(len(result) > 0):
-                self.uiSGC = ventanaSGC()
-                self.uiSGC.setupUi(self.uiSGC)
+                self.uiSGC = ventanaTestSGC()
                 self.uiSGC.setGeometry(qtc.QRect(800,250,0,0))
-                self.uiSGC.pushButton_salir.setAutoDefault(True)
-                self.uiSGC.pushButton_salir.clicked.connect(self.uiSGC.boton_salir_SGC)
                 self.uiSGC.show()
                 self.close()
 
             else:
                 qtw.QMessageBox.critical(self, "Datos incorrectos", "El usuario o la contraseña ingresada no son correctos.")
         except sqlite3.OperationalError:
-            qtw.QMessageBox.information(self, "Primero debes registrarte!", "Antes de iniciar sesión debes crear tu cuenta")
+            qtw.QMessageBox.critical(self,  "Primero debes registrarte!", "Antes de iniciar sesión debes crear tu cuenta")
 
         conexion.close()
 
@@ -140,5 +145,4 @@ class MainWindow(qtw.QWidget):
 if __name__ == '__main__':
     app = qtw.QApplication(sys.argv)
     w = MainWindow()
-    #w.show()
     sys.exit(app.exec_())

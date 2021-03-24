@@ -128,9 +128,9 @@ class Ui_ventana_crear_cuenta(object):
         self.label_titulo.setFont(font)
         self.label_titulo.setObjectName("label_titulo")
         self.label_error404 = QtWidgets.QLabel(self.frame_top)
-        self.label_error404.setGeometry(QtCore.QRect(250, 0, 211, 121))
+        self.label_error404.setGeometry(QtCore.QRect(290, 0, 171, 101))
         self.label_error404.setText("")
-        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/error404.png"))
+        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/error_404-2.png"))
         self.label_error404.setScaledContents(True)
         self.label_error404.setObjectName("label_error404")
 
