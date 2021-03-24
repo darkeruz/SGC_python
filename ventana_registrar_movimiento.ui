@@ -10,6 +10,18 @@
     <height>457</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>480</width>
+    <height>457</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>480</width>
+    <height>457</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Registrar movimientos</string>
   </property>

@@ -15,6 +15,8 @@ class Ui_ventana_realizar_consulta(object):
     def setupUi(self, ventana_realizar_consulta):
         ventana_realizar_consulta.setObjectName("ventana_realizar_consulta")
         ventana_realizar_consulta.resize(480, 640)
+        ventana_realizar_consulta.setMinimumSize(QtCore.QSize(480, 640))
+        ventana_realizar_consulta.setMaximumSize(QtCore.QSize(480, 640))
         ventana_realizar_consulta.setStyleSheet("QWidget{\n"
 "    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));\n"
 "}\n"

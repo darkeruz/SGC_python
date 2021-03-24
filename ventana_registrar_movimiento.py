@@ -15,6 +15,8 @@ class Ui_ventana_registrar_movimiento(object):
     def setupUi(self, ventana_registrar_movimiento):
         ventana_registrar_movimiento.setObjectName("ventana_registrar_movimiento")
         ventana_registrar_movimiento.resize(480, 457)
+        ventana_registrar_movimiento.setMinimumSize(QtCore.QSize(480, 457))
+        ventana_registrar_movimiento.setMaximumSize(QtCore.QSize(480, 457))
         ventana_registrar_movimiento.setStyleSheet("QWidget{\n"
 "    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));\n"
 "\n"
