@@ -18,9 +18,7 @@
 	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));
 }
 
-QFrame#frame_top{
-	
-	
+QFrame#frame_top{	
 	background-image: url(:/images/images/backgroundDarkRed.jpg);
 	border-radius: 15px;
 }
@@ -39,17 +37,15 @@ QLabel#label_error404{
 QFrame#frame_bottom{
 	width: 260px;
     height: 260px;
-    border-radius: 15px;
- 
-	
+    border-radius: 15px;	
 	border-image: url(:/images/images/backgroundDarkRed.jpg);
     display: none;
 }
 
-QListWidget{
-	
+QListWidget{	
 	background-color: qlineargradient(spread:pad, x1:0.786, y1:0.267045, x2:1, y2:0, stop:0 rgba(171, 143, 143, 255), stop:1 rgba(255, 255, 255, 255));
 	border-radius: 15px;
+	color: green;
 }
 
 QLabel#label_descripcion{
