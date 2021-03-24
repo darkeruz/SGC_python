@@ -41,13 +41,15 @@ QFrame#frame_bottom{
 	width: 260px;
     height: 260px;
     border-radius: 15px;
-    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
+	
+	border-image: url(:/images/images/backgroundDarkRed.jpg);
     display: none;
 }
 
 QFrame#frame_top{
 	
-	background-image: url(:/images/images/darkBlueBackground.png);
+	
+	background-image: url(:/images/images/backgroundDarkRed.jpg);
 
 	border-radius: 15px;
 }

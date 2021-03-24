@@ -20,8 +20,8 @@
 
 QFrame#frame_top{
 	
-	background-image: url(:/images/images/darkBlueBackground.png);
-
+	
+	background-image: url(:/images/images/backgroundDarkRed.jpg);
 	border-radius: 15px;
 }
 
@@ -40,9 +40,26 @@ QFrame#frame_bottom{
 	width: 260px;
     height: 260px;
     border-radius: 15px;
-    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
+ 
+	
+	border-image: url(:/images/images/backgroundDarkRed.jpg);
     display: none;
 }
+
+QListWidget{
+	
+	background-color: qlineargradient(spread:pad, x1:0.786, y1:0.267045, x2:1, y2:0, stop:0 rgba(171, 143, 143, 255), stop:1 rgba(255, 255, 255, 255));
+	border-radius: 15px;
+}
+
+QLabel#label_descripcion{
+	background: transparent;
+	color: white;
+	font-size: 16px;
+	font-family: Sans;
+}
+
+
 
 
 
@@ -121,7 +138,44 @@ Contable</string>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>421</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_descripcion">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-10</y>
+      <width>411</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Aquí se muestran todos los movimientos
+ registrados en el sistema</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+   </widget>
   </widget>
+  <zorder>frame_bottom</zorder>
+  <zorder>frame_top</zorder>
  </widget>
  <resources>
   <include location="source.qrc"/>

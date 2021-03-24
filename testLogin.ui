@@ -36,16 +36,21 @@
 }
 
 QFrame#frame_bot{
-	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
+	
+	border-image: url(:/images/images/backgroundDarkRed.jpg);
 }
 
 QFrame{
 	
-	background-image: url(:/images/images/darkBlueBackground.png);
+	/*border-image: url(:/images/images/backgroundDarkRed.jpg);*/
 
 	border-radius: 15px;
 }
 
+QFrame#frame_top{
+	
+	background-image: url(:/images/images/backgroundDarkRed.jpg);
+}
 QLabel{
 	background: transparent;
 	color: rgb(99, 245, 77);
@@ -185,6 +190,9 @@ Contable</string>
      <height>26</height>
     </rect>
    </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_password">
    <property name="geometry">
@@ -259,6 +267,9 @@ Contable</string>
      <width>371</width>
      <height>251</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::StyledPanel</enum>

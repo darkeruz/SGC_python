@@ -35,7 +35,8 @@
 }
 
 QFrame#frame_top{
-background-image: url(:/images/images/darkBlueBackground.png);
+	
+	background-image: url(:/images/images/backgroundDarkRed.jpg);
 
 	border-radius: 15px;
 }
@@ -44,7 +45,8 @@ QFrame#frame_bottom{
 	width: 260px;
     height: 260px;
     border-radius: 15px;
-    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.445545, y2:0.863636, stop:0 rgba(11, 0, 37, 255), stop:1 rgba(0, 5, 64, 255));
+	
+	border-image: url(:/images/images/backgroundDarkRed.jpg);
     display: none;
 }
 
@@ -61,17 +63,17 @@ QLabel#label_titulo{
 
 QPushButton#pushButton_salir{
 color: white;
-background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, stop:0 rgba(164, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))
+background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, stop:0 rgba(164, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
 }
 
 QPushButton#pushButton_registrarMovimientos{
-	background: qlineargradient(spread:pad, x1:0.93, y1:0.147727, x2:1, y2:0, stop:0 rgba(0, 19, 144, 243), stop:1 rgba(255, 255, 255, 255));
+background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, stop:0 rgba(164, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
 	color: white;
 	font-size: 20px;
 }
 
 QPushButton#pushButton_realizarConsultas{
-	background: qlineargradient(spread:pad, x1:0.93, y1:0.147727, x2:1, y2:0, stop:0 rgba(0, 19, 144, 243), stop:1 rgba(255, 255, 255, 255));
+background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, stop:0 rgba(164, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
 	color: white;
 	font-size: 20px;
 }
@@ -202,7 +204,7 @@ consultas</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/consultar.png</pixmap>
+     <pixmap>:/images/images/consultar.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -221,7 +223,7 @@ consultas</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/RegistrarMovimientos.png</pixmap>
+     <pixmap>:/images/images/RegistrarMovimientos.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
