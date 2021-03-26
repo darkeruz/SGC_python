@@ -6,40 +6,40 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>640</height>
+    <width>640</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>480</width>
-    <height>640</height>
+    <width>640</width>
+    <height>480</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>480</width>
-    <height>640</height>
+    <width>640</width>
+    <height>480</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>Realizar consultas</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget{
-	background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));
+   <string notr="true">QWidget#ventana_realizar_consulta{
+	background-color: rgb(52, 2, 2);
 }
 
 QFrame#frame_top{	
-	background-image: url(:/images/images/backgroundDarkRed.jpg);
+	background-image: url(:/images/images/fondoRojo.jpeg);
 	border-radius: 15px;
 }
 
 QLabel#label_titulo{
-	color: rgb(130, 251, 207);
+	color: white;
 	background: transparent;
-	font-size: 28px;
-	font-family: Sans;
+	font-size: 33px;
+	font-family: Arial Black;
 }
 
 QLabel#label_error404{
@@ -50,8 +50,7 @@ QFrame#frame_bottom{
 	width: 260px;
     height: 260px;
     border-radius: 15px;	
-	border-image: url(:/images/images/backgroundDarkRed.jpg);
-    display: none;
+	background-image: url(:/images/images/fondoRojo.jpeg);
 }
 
 QListWidget{	
@@ -65,21 +64,15 @@ QLabel#label_descripcion{
 	color: white;
 	font-size: 16px;
 	font-family: Sans;
-}
-
-
-
-
-
-</string>
+}</string>
   </property>
   <widget class="QFrame" name="frame_top">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>20</y>
-     <width>461</width>
-     <height>111</height>
+     <y>10</y>
+     <width>621</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -92,14 +85,14 @@ QLabel#label_descripcion{
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>0</y>
-      <width>291</width>
+      <y>-20</y>
+      <width>611</width>
       <height>101</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Sans</family>
+      <family>Arial Black</family>
       <pointsize>-1</pointsize>
       <weight>50</weight>
       <italic>false</italic>
@@ -107,37 +100,20 @@ QLabel#label_descripcion{
      </font>
     </property>
     <property name="text">
-     <string>Sistema de Gestión 
-Contable</string>
+     <string>Sistema de Gestión Contable</string>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_error404">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>0</y>
-      <width>161</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/error_404-2.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
   <widget class="QFrame" name="frame_bottom">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>150</y>
-     <width>441</width>
-     <height>471</height>
+     <x>10</x>
+     <y>110</y>
+     <width>621</width>
+     <height>361</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -149,10 +125,10 @@ Contable</string>
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>60</y>
-      <width>421</width>
-      <height>401</height>
+      <x>0</x>
+      <y>40</y>
+      <width>621</width>
+      <height>221</height>
      </rect>
     </property>
    </widget>
@@ -161,7 +137,7 @@ Contable</string>
      <rect>
       <x>10</x>
       <y>-10</y>
-      <width>411</width>
+      <width>611</width>
       <height>71</height>
      </rect>
     </property>
@@ -174,16 +150,57 @@ Contable</string>
      </font>
     </property>
     <property name="text">
-     <string>Aquí se muestran todos los movimientos
- registrados en el sistema</string>
+     <string>Aquí se muestran todos los movimientos registrados en el sistema</string>
     </property>
     <property name="textFormat">
      <enum>Qt::PlainText</enum>
     </property>
    </widget>
+   <widget class="QLabel" name="label_gobierno">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>260</y>
+      <width>641</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="source.qrc">:/images/images/parte inferior1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_descripcion</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>label_gobierno</zorder>
+  </widget>
+  <widget class="QLabel" name="label_error404">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>60</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="source.qrc">:/images/images/iconobuscar.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
   </widget>
   <zorder>frame_bottom</zorder>
   <zorder>frame_top</zorder>
+  <zorder>label_error404</zorder>
  </widget>
  <resources>
   <include location="source.qrc"/>

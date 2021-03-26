@@ -14,38 +14,28 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_ventana_registrar_movimiento(object):
     def setupUi(self, ventana_registrar_movimiento):
         ventana_registrar_movimiento.setObjectName("ventana_registrar_movimiento")
-        ventana_registrar_movimiento.resize(480, 457)
-        ventana_registrar_movimiento.setMinimumSize(QtCore.QSize(480, 457))
-        ventana_registrar_movimiento.setMaximumSize(QtCore.QSize(480, 457))
+        ventana_registrar_movimiento.resize(640, 480)
+        ventana_registrar_movimiento.setMinimumSize(QtCore.QSize(640, 480))
+        ventana_registrar_movimiento.setMaximumSize(QtCore.QSize(640, 480))
         ventana_registrar_movimiento.setStyleSheet("QWidget{\n"
-"    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0.946, y2:0.159, stop:0 rgba(37, 1, 0, 255), stop:1 rgba(0, 0, 0, 255));\n"
-"\n"
-"/*rgb(46, 52, 54)*/\n"
-"\n"
+"    background-color: rgb(52, 2, 2);\n"
 "}\n"
 "\n"
 "QFrame#frame_bottom{\n"
-"    width: 260px;\n"
-"    height: 260px;\n"
 "    border-radius: 15px;\n"
-"    \n"
-"    border-image: url(:/images/images/backgroundDarkRed.jpg);\n"
-"    display: none;\n"
+"    background-image: url(:/images/images/fondoRojo.jpeg);\n"
 "}\n"
 "\n"
 "QFrame#frame_top{\n"
-"    \n"
-"    \n"
-"    background-image: url(:/images/images/backgroundDarkRed.jpg);\n"
-"\n"
+"    background-image: url(:/images/images/fondoRojo.jpeg);\n"
 "    border-radius: 15px;\n"
 "}\n"
 "\n"
 "QLabel#label_titulo{\n"
-"    color: rgb(130, 251, 207);\n"
+"    color: white;\n"
 "    background: transparent;\n"
-"    font-size: 28px;\n"
-"    font-family: Sans;\n"
+"    font-size: 33px;\n"
+"    font-family: Arial Black;\n"
 "}\n"
 "\n"
 "QLabel#label_error404{\n"
@@ -54,13 +44,14 @@ class Ui_ventana_registrar_movimiento(object):
 "\n"
 "QLabel{\n"
 "    background: transparent;\n"
-"    color: rgb(99, 245, 77);\n"
+"    color: white;\n"
 "    font-size: 20px;\n"
 "    font: Ubuntu bold;\n"
 "}\n"
 "\n"
 "QLineEdit{\n"
-"    color: white;\n"
+"    color: black;\n"
+"    background: white;\n"
 "}\n"
 "\n"
 "QPushButton{\n"
@@ -70,49 +61,56 @@ class Ui_ventana_registrar_movimiento(object):
 "\n"
 "")
         self.frame_top = QtWidgets.QFrame(ventana_registrar_movimiento)
-        self.frame_top.setGeometry(QtCore.QRect(0, 10, 461, 111))
+        self.frame_top.setGeometry(QtCore.QRect(10, 10, 621, 91))
         self.frame_top.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_top.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_top.setObjectName("frame_top")
         self.label_titulo = QtWidgets.QLabel(self.frame_top)
-        self.label_titulo.setGeometry(QtCore.QRect(10, 0, 291, 101))
+        self.label_titulo.setGeometry(QtCore.QRect(0, -20, 621, 101))
         font = QtGui.QFont()
-        font.setFamily("Sans")
+        font.setFamily("Arial Black")
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
         self.label_titulo.setFont(font)
+        self.label_titulo.setAlignment(QtCore.Qt.AlignCenter)
         self.label_titulo.setObjectName("label_titulo")
-        self.label_error404 = QtWidgets.QLabel(self.frame_top)
-        self.label_error404.setGeometry(QtCore.QRect(300, 0, 161, 111))
-        self.label_error404.setText("")
-        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/error_404-2.png"))
-        self.label_error404.setScaledContents(True)
-        self.label_error404.setObjectName("label_error404")
         self.frame_bottom = QtWidgets.QFrame(ventana_registrar_movimiento)
-        self.frame_bottom.setGeometry(QtCore.QRect(10, 140, 451, 301))
+        self.frame_bottom.setGeometry(QtCore.QRect(10, 110, 621, 361))
         self.frame_bottom.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_bottom.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_bottom.setObjectName("frame_bottom")
         self.pushButton_registrarMovimiento = QtWidgets.QPushButton(self.frame_bottom)
-        self.pushButton_registrarMovimiento.setGeometry(QtCore.QRect(10, 210, 221, 41))
+        self.pushButton_registrarMovimiento.setGeometry(QtCore.QRect(10, 217, 271, 31))
         self.pushButton_registrarMovimiento.setObjectName("pushButton_registrarMovimiento")
         self.pushButton_salir = QtWidgets.QPushButton(self.frame_bottom)
-        self.pushButton_salir.setGeometry(QtCore.QRect(320, 210, 111, 41))
+        self.pushButton_salir.setGeometry(QtCore.QRect(340, 217, 271, 31))
         self.pushButton_salir.setObjectName("pushButton_salir")
         self.label_tipoMovimiento = QtWidgets.QLabel(self.frame_bottom)
         self.label_tipoMovimiento.setGeometry(QtCore.QRect(10, 120, 201, 24))
         self.label_tipoMovimiento.setObjectName("label_tipoMovimiento")
         self.lineEdit_monto = QtWidgets.QLineEdit(self.frame_bottom)
-        self.lineEdit_monto.setGeometry(QtCore.QRect(219, 80, 211, 25))
+        self.lineEdit_monto.setGeometry(QtCore.QRect(219, 80, 391, 25))
         self.lineEdit_monto.setObjectName("lineEdit_monto")
         self.lineEdit_tipoMovimiento = QtWidgets.QLineEdit(self.frame_bottom)
-        self.lineEdit_tipoMovimiento.setGeometry(QtCore.QRect(220, 120, 211, 25))
+        self.lineEdit_tipoMovimiento.setGeometry(QtCore.QRect(220, 120, 391, 25))
         self.lineEdit_tipoMovimiento.setObjectName("lineEdit_tipoMovimiento")
         self.label_monto = QtWidgets.QLabel(self.frame_bottom)
         self.label_monto.setGeometry(QtCore.QRect(10, 80, 231, 24))
         self.label_monto.setObjectName("label_monto")
+        self.label_gobierno = QtWidgets.QLabel(self.frame_bottom)
+        self.label_gobierno.setGeometry(QtCore.QRect(0, 260, 641, 81))
+        self.label_gobierno.setText("")
+        self.label_gobierno.setPixmap(QtGui.QPixmap(":/images/images/parte inferior1.jpg"))
+        self.label_gobierno.setScaledContents(True)
+        self.label_gobierno.setObjectName("label_gobierno")
+        self.label_error404 = QtWidgets.QLabel(ventana_registrar_movimiento)
+        self.label_error404.setGeometry(QtCore.QRect(270, 70, 111, 91))
+        self.label_error404.setText("")
+        self.label_error404.setPixmap(QtGui.QPixmap(":/images/images/registrarMovimiento.png"))
+        self.label_error404.setScaledContents(True)
+        self.label_error404.setObjectName("label_error404")
 
         self.retranslateUi(ventana_registrar_movimiento)
         QtCore.QMetaObject.connectSlotsByName(ventana_registrar_movimiento)
@@ -120,8 +118,7 @@ class Ui_ventana_registrar_movimiento(object):
     def retranslateUi(self, ventana_registrar_movimiento):
         _translate = QtCore.QCoreApplication.translate
         ventana_registrar_movimiento.setWindowTitle(_translate("ventana_registrar_movimiento", "Registrar movimientos"))
-        self.label_titulo.setText(_translate("ventana_registrar_movimiento", "Sistema de Gestión \n"
-"Contable"))
+        self.label_titulo.setText(_translate("ventana_registrar_movimiento", "Sistema de Gestión Contable"))
         self.pushButton_registrarMovimiento.setText(_translate("ventana_registrar_movimiento", "Registrar movimiento"))
         self.pushButton_salir.setText(_translate("ventana_registrar_movimiento", "Salir"))
         self.label_tipoMovimiento.setText(_translate("ventana_registrar_movimiento", "Tipo de movimiento"))
