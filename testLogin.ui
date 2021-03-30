@@ -76,7 +76,7 @@ QLabel#label_titulo{
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>190</y>
+     <y>150</y>
      <width>331</width>
      <height>28</height>
     </rect>
@@ -126,47 +126,11 @@ QLabel#label_titulo{
     </property>
    </widget>
   </widget>
-  <widget class="QComboBox" name="comboBox">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>140</y>
-     <width>271</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>Estandar</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Administrador</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QLabel" name="label_cuenta">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>120</y>
-     <width>71</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Cuenta</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="lineEdit_user">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>220</y>
+     <y>180</y>
      <width>271</width>
      <height>26</height>
     </rect>
@@ -179,7 +143,7 @@ QLabel#label_titulo{
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>290</y>
+     <y>250</y>
      <width>271</width>
      <height>26</height>
     </rect>
@@ -192,7 +156,7 @@ QLabel#label_titulo{
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>265</y>
+     <y>225</y>
      <width>131</width>
      <height>17</height>
     </rect>
@@ -262,7 +226,7 @@ QLabel#label_titulo{
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>260</y>
+      <y>270</y>
       <width>641</width>
       <height>81</height>
      </rect>
@@ -271,7 +235,7 @@ QLabel#label_titulo{
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/parte inferior1.jpg</pixmap>
+     <pixmap resource="source.qrc">:/images/images/parte_inferior1.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -306,13 +270,10 @@ QLabel#label_titulo{
   <zorder>frame_bot</zorder>
   <zorder>frame_top</zorder>
   <zorder>label_usuario</zorder>
-  <zorder>label_cuenta</zorder>
   <zorder>lineEdit_user</zorder>
   <zorder>lineEdit_password</zorder>
   <zorder>label_password</zorder>
   <zorder>label_error404</zorder>
-  <zorder>comboBox</zorder>
-  <zorder></zorder>
   <zorder>pushButton_login</zorder>
   <zorder>pushButton_salir</zorder>
   <zorder>pushButton_register</zorder>

@@ -41,6 +41,9 @@ class MainWindowSGC(qtw.QWidget):
     def boton_salir(self):
         self.close()
 
+    def boton_disabled(self):
+        self.uiSGC.pushButton_registrarMovimientos.setDisabled(True)
+
     def ventana_realizar_consulta(self):
         self.uiVentanaRealizarConsulta = ventanaRealizarConsulta()
         self.uiVentanaRealizarConsulta.setupUi(self.uiVentanaRealizarConsulta)

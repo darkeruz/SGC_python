@@ -27,7 +27,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#ventana_realizar_consulta{
-	background-color: rgb(52, 2, 2);
+background-color: rgb(52, 2, 2);
 }
 
 QFrame#frame_top{	
@@ -160,7 +160,7 @@ QLabel#label_descripcion{
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>260</y>
+      <y>270</y>
       <width>641</width>
       <height>81</height>
      </rect>
@@ -169,7 +169,7 @@ QLabel#label_descripcion{
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/parte inferior1.jpg</pixmap>
+     <pixmap resource="source.qrc">:/images/images/parte_inferior1.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

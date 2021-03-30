@@ -27,7 +27,8 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
-	background-color: rgb(52, 2, 2);
+background-color: rgb(52, 2, 2);
+
 }
 
 QFrame#frame_bottom{
@@ -202,7 +203,7 @@ background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, st
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>260</y>
+      <y>270</y>
       <width>641</width>
       <height>81</height>
      </rect>
@@ -211,7 +212,7 @@ background: qlineargradient(spread:pad, x1:0.800995, y1:0.256182, x2:1, y2:0, st
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="source.qrc">:/images/images/parte inferior1.jpg</pixmap>
+     <pixmap resource="source.qrc">:/images/images/parte_inferior1.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
